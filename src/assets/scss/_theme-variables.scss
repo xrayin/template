@@ -1,0 +1,309 @@
+// 
+// This file changes Bootstrap core variables plus adds new ones.
+// 
+// We do not recommend that you edit here directly.
+// Instead, add your overrides in the _user-variables.scss file.
+// This way, getting future updates will be much simpler.
+// 
+
+
+// Config
+
+$enable-negative-margins: true !default;
+
+
+// Sizes
+
+$sizes: (
+  10: 10%,
+  20: 20%,
+  25: 25%,
+  30: 30%,
+  40: 40%,
+  50: 50%,
+  60: 60%,
+  70: 70%,
+  75: 75%,
+  80: 80%,
+  90: 90%,
+  100: 100%
+) !default;
+
+
+// Color system
+
+$min-contrast-ratio: 2 !default;
+
+$purple:    #6672e8 !default;
+$primary:   #2083fe !default;
+$secondary: #5A6C90 !default;
+$success:   #34bd91 !default;
+$info:      #18b7ff !default;
+$warning:   #fdc724 !default;
+$danger:    #bd4242 !default;
+$light:     #f6f9fc !default;
+$dark:      #1e2e50 !default;
+$sky:       #e9f4ff !default; // new
+$pistachio: #ddf5f4 !default; // new
+$darkblue:  #1f2c73 !default; // new
+
+
+// Responsive breakpoints
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1500px
+) !default;
+
+
+// Typography
+
+$font-family-base:    'SpartanMB', sans-serif !default;
+$display-font-sizes: (
+  1: 5.75rem,
+  2: 5rem,
+  3: 4rem,
+  4: 3.2rem,
+  5: 2.85rem,
+  6: 2.5rem
+) !default;
+$font-size-sm:        .85rem !default;
+$font-size-xs:        .7rem !default; // new
+$text-muted:          #7184ad !default;
+$font-weight-bold:    500 !default;
+$font-weight-bolder:  600 !default;
+$hr-color:            #dee2e6 !default;
+$hr-opacity:          1 !default;
+
+
+// Links
+
+$link-decoration:       none !default;
+$link-hover-decoration: underline !default;
+
+
+// Shadows
+
+$box-shadow-sm:       0 .125rem .25rem rgba(35,38,45, 0.09) !default;
+$box-shadow:          0 .5rem 1.25rem rgba(35,38,45, 0.125) !default;
+$box-shadow-lg:       0 1rem 3rem rgba(35,38,45, .275) !default;
+$box-shadow-light-sm: 0 .125rem .25rem rgba(35,38,45, 0.05) !default; // new
+$box-shadow-light:    0 .5rem 1.25rem rgba(35,38,45, 0.05) !default; // new
+$box-shadow-light-lg: 0 1rem 3rem rgba(35,38,45, .05) !default; // new
+
+
+// Navbar
+
+$navbar-padding-y:                  1.3rem !default;
+$navbar-nav-link-padding-x:         1.2rem !default;
+$navbar-dropdown-box-shadow-lg:     0 1.5rem 3rem rgba(75,78,88, 0.175) !default; // new
+
+$navbar-light-color:                #212529 !default;
+$navbar-light-hover-color:          #3d448b !default;
+$navbar-light-active-color:         #3d448b !default;
+$navbar-light-toggler-border-color: transparent !default;
+
+$navbar-dark-color:                 #fff !default;
+$navbar-dark-hover-color:           #e2e5e8 !default;
+$navbar-dark-toggler-border-color:  transparent !default;
+
+
+// Footer
+
+$footer-padding-y:                4.25rem !default; // new
+$footer-header-font-size:         .875rem !default; // new
+$footer-link-font-size:           .875rem !default; // new
+$footer-text-font-size:           .7rem !default; // new
+
+$footer-light-header-color:       $dark !default; // new
+$footer-light-link-color:         $darkblue !default; // new
+$footer-light-social-icon-bg:     $dark !default; // new
+$footer-light-social-icon-color:  $light !default; // new
+$footer-light-text-color:         rgba($dark, .8) !default; // new
+$footer-light-brand-color:        $dark !default; // new
+
+$footer-dark-header-color:        $info !default; // new
+$footer-dark-link-color:          $sky !default; // new
+$footer-dark-social-icon-bg:      $sky !default; // new
+$footer-dark-social-icon-color:   $dark !default; // new
+$footer-dark-text-color:          rgba($sky, .6) !default; // new
+$footer-dark-brand-color:         $sky !default; // new
+
+
+// Alerts
+
+$alert-bg-level:    -9 !default;
+$alert-color-level: 8 !default;
+
+
+// Dropdowns
+
+$dropdown-font-size:          .95rem !default;
+$dropdown-border-color:       #fbfbfb !default;
+$dropdown-link-color:         #495057 !default;
+$dropdown-link-hover-color:   #454e9e !default;
+$dropdown-link-active-color:  #454e9e !default;
+$dropdown-link-hover-bg:      none !default;
+$dropdown-link-active-bg:     none !default;
+$dropdown-padding-y:          1rem !default;
+$dropdown-header-padding:     0 1rem .5rem 1rem !default;
+$dropdown-header-color:       #222 !default;
+$caret-spacing:               .5rem !default;
+
+
+// Buttons
+
+$btn-padding-y:     .4rem !default;
+$btn-padding-x:     1.1rem !default;
+$btn-padding-y-sm:  .3rem !default;
+$btn-padding-x-sm:  .6rem !default;
+$btn-padding-y-lg:  .8rem !default;
+$btn-padding-x-lg:  1.85rem !default;
+$btn-font-size-lg:  1.1rem !default;
+
+
+// Badges
+
+$badge-padding-y:       .25rem !default;
+$badge-padding-x:       .75rem !default;
+$badge-font-weight:     400 !default;
+$badge-border-radius:   .35rem !default;
+$badge-padding-y-lg:    .7rem !default; // new
+$badge-padding-x-lg:    1.1rem !default; // new
+$badge-font-size-lg:    .9rem !default; // new
+
+
+// Cards
+
+$card-spacer-y:     1.5rem !default;
+$card-spacer-x:     1.75rem !default;
+$card-border-width: 0 !default;
+$card-border-color: rgba($dark, .09) !default;
+$card-cap-bg:       transparent !default;
+
+
+// List groups
+
+$list-group-border-color: rgba($dark, .09) !default;
+
+
+// Forms
+
+$input-placeholder-color:   rgba(#000, .35) !default;
+$input-border-color:        #dee2e6 !default;
+$input-focus-box-shadow:    none !default;
+$input-focus-border-color:  $primary !default;
+
+$input-group-addon-bg:      #fff !default;
+$input-group-addon-color:   $darkblue !default;
+
+$form-check-input-bg:               #dee2e6 !default;
+$form-check-input-border:           none !default;
+$form-check-input-focus-box-shadow: none !default;
+$form-check-input-active-filter:    brightness(95%) !default;
+
+$form-switch-color:         #fff !default;
+$form-switch-width:         3em !default;
+$form-switch-focus-color:   #fff !default;
+
+
+// Pagination
+
+$pagination-color:        $dark !default;
+$pagination-bg:           transparent !default;
+$pagination-border-width: 0 !default;
+$pagination-hover-color:  $dark !default;
+$pagination-hover-bg:     #f8f9fa !default;
+$pagination-active-bg:    $dark !default;
+$pagination-active-color: $light !default;
+$pagination-padding-x:    .85rem !default;
+
+
+// Breadcrumbs
+
+$breadcrumb-bg:           none !default;
+$breadcrumb-padding-x:    0 !default;
+$breadcrumb-active-color: $darkblue !default;
+
+
+// Modals
+
+$modal-backdrop-opacity:  0.85 !default;
+$modal-backdrop-bg:       $dark !default;
+$modal-md:                550px !default;
+
+
+// Tables
+
+$table-cell-padding-y:  1rem !default;
+$table-cell-padding-x:  1rem !default;
+$table-border-color:    #e9ecef !default;
+$table-hover-bg:        darken($light, 2%) !default;
+
+
+// Transitions
+
+$bg-transition: background-color .2s linear !default; // new
+
+
+// Navs
+
+$nav-pills-link-active-color: $dark !default;
+$nav-pills-link-active-bg:    #fff !default;
+
+
+// Iconav 
+
+$iconav-brand-padding-x:    1rem !default; // new
+$iconav-brand-padding-y:    1.75rem !default; // new
+
+$iconav-light-bg:           #fff !default; // new
+$iconav-light-border-color: #eee !default; // new
+$iconav-light-brand-bg:     #f3f4f7 !default; // new
+$iconav-light-link-color:   $darkblue !default; // new
+$iconav-light-hover-bg:     #f8f9fa !default; // new
+$iconav-light-active-bg:    #f4f4f7 !default; // new
+
+$iconav-dark-bg:            #30343e !default; // new
+$iconav-dark-border-color:  #212225 !default; // new
+$iconav-dark-brand-bg:      #0f1013 !default; // new
+$iconav-dark-link-color:    #e9ecef !default; // new
+$iconav-dark-hover-bg:      darken(#30343e, 5%) !default; // new
+$iconav-dark-active-bg:     #20232b !default; // new
+
+
+// Timeline
+
+$timeline-bg:               #e4e9f1 !default; // new
+$timeline-post-margin-top:  5rem !default; // new
+
+
+// Statcards
+
+$statcard-padding-y:          1.5rem !default; // new
+$statcard-padding-x:          1.5rem !default; // new
+$statcard-change-size:        .8rem !default; // new
+$statcard-label-size:         .8rem !default; // new
+$statcard-label-font-weight:  500 !default; // new
+$statcard-label-color:        $text-muted !default; // new
+
+
+// Z-index
+
+$zindex-navbar:           1034 !default; // new
+$zindex-navbar-ecommerce: 1035 !default; // new
+$zindex-iconav:           1036 !default; // new
+
+
+// Close
+
+$btn-close-width: .7em !default;
+
+
+// Fixed sizes
+
+$fixed-sizes: (150: 150px, 200: 200px, 250: 250px, 300: 300px, 350: 350px, 400: 400px, 450: 450px, 500: 500px, 550: 550px, 600: 600px, 650: 650px, 700: 700px) !default; // new

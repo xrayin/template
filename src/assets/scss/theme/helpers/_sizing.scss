@@ -1,0 +1,18 @@
+// 
+// Responsive sizing
+// 
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    // responsive viewports: (vw-20, vw-sm-20, vw-md-20...)
+    @each $size, $length in $sizes {
+      .vw#{$infix}-#{$size} { width: #{$size}vw !important; }
+      .vh#{$infix}-#{$size} { height: #{$size}vh !important; }
+
+      .min-vw#{$infix}-#{$size} { min-width: #{$size}vw !important; }
+      .min-vh#{$infix}-#{$size} { min-height: #{$size}vh !important; }
+    }
+  }
+}

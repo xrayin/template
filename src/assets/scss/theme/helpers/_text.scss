@@ -1,0 +1,64 @@
+// 
+// Pastel text and link colors
+// 
+
+@each $color, $value in $theme-colors {
+  $pastel: color-level($value, -6);
+
+  .text-pastel-#{$color} {
+    color: $pastel !important;
+  }
+
+  .link-pastel-#{$color} {
+    color: $pastel;
+
+    @if $emphasized-link-hover-darken-percentage != 0 {
+      &:hover,
+      &:focus {
+        color: if(color-contrast($pastel) == $color-contrast-light, darken($pastel, $emphasized-link-hover-darken-percentage), lighten($pastel, $emphasized-link-hover-darken-percentage));
+      }
+    }
+  }
+}
+
+
+// 
+// Extra text helpers
+//
+
+.font-georgia { font-family: Georgia, "Merriweather", Arial; }
+.font-merriweather { font-family: "Merriweather", Georgia; }
+
+.text-uppercase { letter-spacing: .8px; }
+
+.text-bg-clip {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  // if we can clip it, do it
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  // fallback text color
+  color: $white;
+}
+
+
+// 
+// Shortcut for a combination of styles that are commonly used throughout the theme
+// in buttons, subtitles, etc to prevent repetition.
+// 
+
+.text-uppercase-bold-sm {
+  text-transform: uppercase !important;
+  font-weight: $font-weight-bold !important;
+  letter-spacing: 2px !important;
+  font-size: $font-size-sm !important;
+}
+
+.text-uppercase-xs {
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  font-size: $font-size-xs !important;
+}

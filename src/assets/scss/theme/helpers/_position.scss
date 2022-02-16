@@ -1,0 +1,41 @@
+// 
+// Responsive centering
+// 
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .center-x#{$infix} { 
+      left: 50%;
+      transform: translate3d(-50%, 0, 0);
+    }
+
+    .center-y#{$infix} { 
+      top: 50%;
+      transform: translate3d(0, -50%, 0);
+    }
+
+    .center-xy#{$infix} { 
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+    }
+  }
+}
+
+// 
+// Relative top helpers
+// 
+
+@for $i from 1 through 10 {
+  .relative-top-#{$i} {
+    position: relative;
+    top: #{$i}px;
+  }
+
+  .relative-top--#{$i} {
+    position: relative;
+    top: -#{$i}px;
+  }
+}
